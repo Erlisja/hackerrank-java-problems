@@ -1,4 +1,4 @@
-package Hackerrank_Problems;
+package Hackerrank_Problems.MinMaxSum;
 import java.io.*;
 import java.math.*;
 import java.security.*;
