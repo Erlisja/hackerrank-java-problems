@@ -1,12 +1,7 @@
 package Hackerrank_Problems.DiagonalDifference;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
 class Result {
     
@@ -15,8 +10,8 @@ class Result {
      int rDiag = 0;
     int lDiag = 0;
     for (int i = 0; i<arr.size(); i++){
-        rDiag += arr.get(i).get(i);
-        lDiag += arr.get(i).get(arr.size()-i-1);
+        rDiag += arr.get(i).get(i);  // to access the elements of the list of lists (2D array) in Java we use get() method twice. 
+        lDiag += arr.get(i).get(arr.size()-i-1);  // 
     }
     return Math.abs(lDiag-rDiag);
 
